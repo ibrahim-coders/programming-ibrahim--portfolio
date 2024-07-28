@@ -1,3 +1,36 @@
+/* src/styles/tailwind.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .about {
+    @apply text-5xl text-red-900 py-5 px-5;
+  }
+  @layer components {
+  .name{
+    @apply relative text-[#32a99a];
+  }
+  .name::before {
+    content: "";
+    @apply absolute left-0 h-full w-full animate-type;
+  }
+}
+}
+#typing-text:after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
