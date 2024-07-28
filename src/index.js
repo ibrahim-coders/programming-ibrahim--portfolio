@@ -58,7 +58,7 @@
        isDeleting = true;
      }
    }
-   setTimeout(type, 300);
+   setTimeout(type, 500);
  }
 
  type();
