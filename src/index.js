@@ -1,13 +1,3 @@
-// document.getElementById('menu-toggle').addEventListener('click', function () {
-//     const mobileMenu = document.getElementById('mobile-menu');
-//     if (mobileMenu.classList.contains('hidden')) {
-//       mobileMenu.classList.remove('hidden');
-//       mobileMenu.classList.add('translate-y-0');
-//     } else {
-//       mobileMenu.classList.add('hidden');
-//       mobileMenu.classList.remove('translate-y-0');
-//     }
-//   });
 
   const menuToggle = document.getElementById('menu-toggle');
   const menuOpen = document.getElementById('menu-open');
@@ -62,3 +52,22 @@
  }
 
  type();
+
+
+// script.js
+// document.addEventListener('DOMContentLoaded', function () {
+//     const animatedImage = document.querySelector('.animated-image');
+    
+//     function animateImage() {
+//         animatedImage.style.left = '0'; // Move to the right (visible area)
+//     }
+
+//     // Delay the animation start
+//     setTimeout(animateImage, 500); // Adjust the delay as needed
+// });
+
+
+
+
+
+
