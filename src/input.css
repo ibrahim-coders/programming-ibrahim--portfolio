@@ -21,5 +21,9 @@
         transform: translateY(20px);
       }
     }
+ .web-site{
+ @apply overflow-y: hidden  overflow-x: hidden; /* Hide vertical scrollbar */
+ 
+  }
 }
 

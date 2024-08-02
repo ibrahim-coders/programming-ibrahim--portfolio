@@ -54,19 +54,55 @@
  type();
 
 
-// script.js
-// document.addEventListener('DOMContentLoaded', function () {
-//     const animatedImage = document.querySelector('.animated-image');
-    
-//     function animateImage() {
-//         animatedImage.style.left = '0'; // Move to the right (visible area)
-//     }
+const tl = gsap.timeline();
 
-//     // Delay the animation start
-//     setTimeout(animateImage, 500); // Adjust the delay as needed
+// tl.to('#apple-logo', {
+//   opacity: 1,
+//   delay: 1,
+//   duration: 1,
+//   scale: 2,
 // });
 
+// tl.to('#apple-logo', {
+//   opacity: 0,
+//   duration: 2,
+// });
 
+tl.to('.heding', {
+  opacity: 1,
+  scale: 2,
+  duration: 2,
+});
+tl.to('.heding', {
+  opacity: 0,
+  scale: 1,
+  duration: 2,
+});
+
+// tl.to('#root', {
+//   y: '-100%',
+//   duration: 2,
+//   ease: 'sine.out',
+// });
+
+tl.from('header', {
+  opacity: 0,
+  scaleX: 2,
+  duration: 1,
+  ease: 'circ.out',
+});
+tl.from('.container h2 span', {
+  opacity: 0,
+  stagger: 0.2,
+  duration: 1,
+  ease: 'power3.out',
+});
+tl.from('nav a', {
+  opacity: 0,
+  stagger: 0.2,
+  duration: 1,
+  ease: 'power3.out',
+});
 
 
 
