@@ -56,18 +56,6 @@
 
 const tl = gsap.timeline();
 
-// tl.to('#apple-logo', {
-//   opacity: 1,
-//   delay: 1,
-//   duration: 1,
-//   scale: 2,
-// });
-
-// tl.to('#apple-logo', {
-//   opacity: 0,
-//   duration: 2,
-// });
-
 tl.to('.heding', {
   opacity: 1,
   scale: 2,
@@ -79,30 +67,25 @@ tl.to('.heding', {
   duration: 2,
 });
 
-// tl.to('#root', {
-//   y: '-100%',
-//   duration: 2,
-//   ease: 'sine.out',
-// });
+tl.to('#root', {
+  y: '-100%',
+  duration: 2,
+  ease: 'sine.out',
+});
 
 tl.from('header', {
   opacity: 0,
   scaleX: 2,
-  duration: 1,
+  duration: 0.6,
   ease: 'circ.out',
 });
 tl.from('.container h2 span', {
   opacity: 0,
   stagger: 0.2,
-  duration: 1,
+  duration: 0.2,
   ease: 'power3.out',
 });
-tl.from('nav a', {
-  opacity: 0,
-  stagger: 0.2,
-  duration: 1,
-  ease: 'power3.out',
-});
+
 
 
 
